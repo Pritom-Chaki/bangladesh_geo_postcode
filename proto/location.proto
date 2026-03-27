@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+message Location {
+  string division_en = 1;
+  string district_en = 2;
+  string thana_en = 3;
+  string suboffice_en = 4;
+  string postcode_en = 5;
+
+  string division_bn = 6;
+  string district_bn = 7;
+  string thana_bn = 8;
+  string suboffice_bn = 9;
+  string postcode_bn = 10;
+}
+
+message LocationList {
+  repeated Location items = 1;
+}

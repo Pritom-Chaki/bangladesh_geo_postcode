@@ -1,0 +1,27 @@
+name: bangladesh_geo_postcode
+description: >-
+  Offline Bangladesh geographic postcode lookup with Division, District,
+  Thana and Postcode search. Supports Bangla and English. Uses Protocol
+  Buffers for fast loading.
+version: 0.0.1
+homepage: https://github.com/AKB0N/bangladesh_geo_postcode
+repository: https://github.com/AKB0N/bangladesh_geo_postcode
+issue_tracker: https://github.com/AKB0N/bangladesh_geo_postcode/issues
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  protobuf: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - assets/locations.pb
