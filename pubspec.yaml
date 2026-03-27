@@ -4,9 +4,9 @@ description: >-
   Thana and Postcode search. Supports Bangla and English. Uses Protocol
   Buffers for fast loading.
 version: 0.0.1
-homepage: https://github.com/AKB0N/bangladesh_geo_postcode
-repository: https://github.com/AKB0N/bangladesh_geo_postcode
-issue_tracker: https://github.com/AKB0N/bangladesh_geo_postcode/issues
+homepage: https://github.com/Pritom-Chaki/bangladesh_geo_postcode
+repository: https://github.com/Pritom-Chaki/bangladesh_geo_postcode
+issue_tracker: https://github.com/Pritom-Chaki/bangladesh_geo_postcode/issues
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

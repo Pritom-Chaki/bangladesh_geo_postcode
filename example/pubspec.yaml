@@ -1,0 +1,13 @@
+name: bangladesh_geo_postcode_example
+description: Example app for bangladesh_geo_postcode package.
+publish_to: "none"
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bangladesh_geo_postcode:
+    path: ../

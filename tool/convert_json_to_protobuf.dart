@@ -12,6 +12,8 @@ import 'dart:io';
 // We import the same protobuf model the package uses at runtime.
 import '../lib/src/models/location.pb.dart';
 
+String _str(dynamic v) => (v as String?)?.trim() ?? '';
+
 void main() {
   final jsonFile = File('locations.json');
   if (!jsonFile.existsSync()) {
@@ -25,24 +27,34 @@ void main() {
 
   final locationList = LocationList();
 
+  var skipped = 0;
   for (final item in items) {
-    final en = item['en'] as Map<String, dynamic>;
-    final bn = item['bn'] as Map<String, dynamic>;
+    final en = item['en'] as Map<String, dynamic>?;
+    final bn = item['bn'] as Map<String, dynamic>?;
+
+    if (en == null || bn == null) {
+      skipped++;
+      continue;
+    }
 
     locationList.items.add(
       Location(
-        divisionEn: en['division'] ?? '',
-        districtEn: en['district'] ?? '',
-        thanaEn: en['thana'] ?? '',
-        subofficeEn: en['suboffice'] ?? '',
-        postcodeEn: en['postcode'] ?? '',
-        divisionBn: bn['division'] ?? '',
-        districtBn: bn['district'] ?? '',
-        thanaBn: bn['thana'] ?? '',
-        subofficeBn: bn['suboffice'] ?? '',
-        postcodeBn: bn['postcode'] ?? '',
+        divisionEn: _str(en['division']),
+        districtEn: _str(en['district']),
+        thanaEn: _str(en['thana']),
+        subofficeEn: _str(en['suboffice']),
+        postcodeEn: _str(en['postcode']),
+        divisionBn: _str(bn['division']),
+        districtBn: _str(bn['district']),
+        thanaBn: _str(bn['thana']),
+        subofficeBn: _str(bn['suboffice']),
+        postcodeBn: _str(bn['postcode']),
       ),
     );
+  }
+
+  if (skipped > 0) {
+    print('⚠ Skipped $skipped items with null en/bn fields.');
   }
 
   final outputDir = Directory('assets');
@@ -53,6 +65,6 @@ void main() {
   final outputFile = File('assets/locations.pb');
   outputFile.writeAsBytesSync(locationList.writeToBuffer());
 
-  print('✔ Converted ${items.length} locations');
+  print('✔ Converted ${locationList.items.length} locations');
   print('✔ Output: assets/locations.pb (${outputFile.lengthSync()} bytes)');
 }
