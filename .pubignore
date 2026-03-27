@@ -1,3 +1,16 @@
 tool/
 proto/
 locations.json
+build/
+
+example/android/
+example/ios/
+example/web/
+example/windows/
+example/linux/
+example/macos/
+example/build/
+example/.dart_tool/
+example/.gradle/
+example/*.iml
+example/.metadata

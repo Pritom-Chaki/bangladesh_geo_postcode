@@ -3,7 +3,7 @@ description: >-
   Offline Bangladesh geographic postcode lookup with Division, District,
   Thana and Postcode search. Supports Bangla and English. Uses Protocol
   Buffers for fast loading.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Pritom-Chaki/bangladesh_geo_postcode
 repository: https://github.com/Pritom-Chaki/bangladesh_geo_postcode
 issue_tracker: https://github.com/Pritom-Chaki/bangladesh_geo_postcode/issues
