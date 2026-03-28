@@ -3,10 +3,16 @@ description: >-
   Offline Bangladesh geographic postcode lookup with Division, District,
   Thana and Postcode search. Supports Bangla and English. Uses Protocol
   Buffers for fast loading.
-version: 0.0.2
+version: 1.0.0
 homepage: https://github.com/Pritom-Chaki/bangladesh_geo_postcode
 repository: https://github.com/Pritom-Chaki/bangladesh_geo_postcode
 issue_tracker: https://github.com/Pritom-Chaki/bangladesh_geo_postcode/issues
+topics:
+  - bangladesh
+  - postcode
+  - bangla
+  - localization
+  - protobuf
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -15,7 +21,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  protobuf: ^3.1.0
+  protobuf: ^6.0.0
 
 dev_dependencies:
   flutter_test:

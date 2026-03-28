@@ -165,7 +165,7 @@ class _HomePageState extends State<HomePage>
         bottom: TabBar(
           controller: _tabController,
           tabs: const [
-            Tab(text: 'Browse', icon: Icon(Icons.list)),
+            Tab(text: 'Browse', icon: Icon(Icons.location_on)),
             Tab(text: 'Search', icon: Icon(Icons.search)),
           ],
         ),

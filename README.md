@@ -1,3 +1,10 @@
+> Offline Bangladesh postcode lookup with Division, District, Thana, and bilingual Bangla-English search powered by fast Protocol Buffers.
+
+[![Package Version](https://img.shields.io/pub/v/bangladesh_geo_postcode?color=teal&style=plastic)](https://pub.dev/packages/bangladesh_geo_postcode "Published package version")
+[![LICENSE](https://img.shields.io/badge/License-MIT-red.svg?style=plastic)](https://github.com/Pritom-Chaki/bangladesh_geo_postcode/blob/main/LICENSE "Project's LICENSE")
+[![Last Commit](https://img.shields.io/github/last-commit/Pritom-Chaki/bangladesh_geo_postcode.svg?logo=github&style=plastic)](https://github.com/Pritom-Chaki/bangladesh_geo_postcode)
+
+
 # bangladesh_geo_postcode
 
 Offline Bangladesh geographic postcode lookup for Flutter. Supports **Division > District > Thana > Postcode** navigation in both **Bangla** and **English**.
@@ -16,9 +23,11 @@ Uses **Protocol Buffers** for fast binary loading — no database, no API, fully
 
 ### 1. Add dependency
 
+ Add the following line to the dependencies section in your project's 
+ **`pubspec.yaml`** file:
+
 ```yaml
-dependencies:
-  bangladesh_geo_postcode: ^0.0.1
+flutter pub add bangladesh_geo_postcode
 ```
 
 ### 2. Initialise at app startup
@@ -127,6 +136,30 @@ final normalized = normalizePostcode('১২০৬'); // "1206"
 enum Language { en, bn }
 ```
 
-## License
+## Example Render UI
+<img src="https://raw.githubusercontent.com/Pritom-Chaki/bangladesh_geo_postcode/main/example/images/example_ss.png?raw=true">
 
-MIT
+[![Contact Me](https://www.pritom.me/assets/contact_me.gif?raw=true)](https://www.pritom.me/contact?source=pubget)
+
+## Demo
+
+For a complete example app, see the [example directory](https://github.com/Pritom-Chaki/bangladesh_geo_postcode/tree/main/example).
+
+
+## Help
+
+Found a bug? [Report it here.](https://github.com/Pritom-Chaki/bangladesh_geo_postcode/issues/new?assignees=&labels=&template=bug_report.md&title=)
+Have a feature request? [Request it here.](https://github.com/Pritom-Chaki/bangladesh_geo_postcode/issues/new?assignees=&labels=&template=feature_request.md&title=)
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
+
+## Contributions
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+
+
+## **License**
+
+Released under the [MIT License](LICENSE).

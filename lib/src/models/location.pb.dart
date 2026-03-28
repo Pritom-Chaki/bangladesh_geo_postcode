@@ -65,8 +65,6 @@ class Location extends $pb.GeneratedMessage {
   @override
   Location createEmptyInstance() => create();
 
-  static $pb.PbList<Location> createRepeated() => $pb.PbList<Location>();
-
   @override
   Location clone() => Location()..mergeFromMessage(this);
 

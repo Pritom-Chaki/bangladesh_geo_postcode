@@ -11,3 +11,7 @@ dependencies:
     sdk: flutter
   bangladesh_geo_postcode:
     path: ../
+  cupertino_icons: ^1.0.8
+
+flutter:
+  uses-material-design: true

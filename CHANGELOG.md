@@ -1,3 +1,8 @@
+## 1.0.0
+
+* Final test pass and approved.
+* Update README.md file.
+
 ## 0.0.2
 
 * Added Flutter example app with Browse and Search tabs.
